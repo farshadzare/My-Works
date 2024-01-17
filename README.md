@@ -35,7 +35,8 @@ Now equipped with the data file for the specified day, we're poised to delve int
 2.	Navigate to the directory containing the package:
 3.	Run the Python 
 4.	Run the Package and call function as follow:
-
+- from PACKAGE_NAME import FUNCTION_NAME
+- FUNCTION_NAME(gtfs_file_path, service_date: "YYYY-MM-DD", output_shapefile_path)
   
 # The resulting output from the pt_stop_frequency function manifests as a comprehensive GeoDataFrame, encompassing several critical columns:
 1.	stop_id (from GTFS): Identifies the unique identifier for each stop within the GTFS data, aiding in precise location referencing.
@@ -56,7 +57,7 @@ Each route has shape_id assigned. Data frame shapes_df contains coordinates of e
 3.	Run the Python 
 4.	Run the Package and call function as follow:
 - from PACKAGE_NAME import FUNCTION_NAME
-- FUNCTION_NAME(gtfs_file_path, service_date, output_shapefile_path)
+- FUNCTION_NAME(gtfs_file_path, service_date: "YYYY-MM-DD", output_shapefile_path)
   
 # Attributes for each segment include:
 •	BusNum: BusNumbers, representing the bus service associated with the segment.
